@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/myStyle.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- main menu -->
+    <section>
+        <!--header -->
+        <div class="container-fluid" style="background-color: rgb(241, 208, 158);">
+            <div class="container pt-2 pb-2">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="./images/icon/icon_phone.png" alt="" width="15" height="15"><small>+88 888 8888
+                        </small>
+                        <img src="./images/icon/icon_mail.png" alt="" width="15" height="15"
+                            class="myMargin-left-30px"><small> info@gmail.com</small>
+                    </div>
+                    <div class="col-md-4 offset-3 pl-5 topHeader text-right">
+                        <a href=""><img src="./images/icon/fb_icon.png" alt="" width="15" height="15"
+                                style="margin: 0px 15px"></a>
+                        <a href=""><img src="./images/icon/tw.png" alt="" width="15" height="15"
+                                style="margin: 0px 15px"></a>
+                        <a href=""><img src="./images/icon/gg.png" alt="" width="15" height="15"
+                                style="margin: 0px 15px"></a>
+                        <a href=""><img src="./images/icon/insta.png" alt="" width="15" height="15"
+                                style="margin: 0px 15px"></a>
+                        <a href=""><img src="./images/icon/pin.png" alt="" width="15" height="15"
+                                style="margin: 0px 15px"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end header -->
+
+        <!-- logo and menu -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="./images/Logo/Vintage_logo.png" width="200" height="200">
+                </div>
+                <div class="col-md-3 offset-1">
+                    <div class="row myMargin-top-60px">
+                        <div class="col-md-12 searchForm animateForm">
+                            <input type="text" style="background-image: url(./images/icon/search.png);"
+                                placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="row myMargin-top-30px">
+                        <div class="col-md-6">
+                            <select class="mySelectStyle">
+                                <option value="0">English</option>
+                                <option value="34">Vietnamese</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <select class="mySelectStyle">
+                                <option value="0">Light</option>
+                                <option value="34">Dark</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">
+                                        <img class="myMargin-bottom-2px" src="./images/icon/home.png" alt="" width="15"
+                                            height="15">
+                                        Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./danhmuc.html">
+                                        <img class="myMargin-bottom-2px" src="./images/icon/category.png" alt=""
+                                            width="15" height="15">
+                                        Category</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#myModal" data-toggle="modal">
+                                        <img class="myMargin-bottom-2px" src="./images/icon/login.png" alt="" width="15"
+                                            height="15">
+                                        Log in</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./dangky.html">
+                                        <img class="myMargin-bottom-2px" src="./images/icon/sign_up.png" alt=""
+                                            width="15" height="15">
+                                        Sign up</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contact.html">
+                                        <img class="myMargin-bottom-2px" src="./images/icon/contact.png" alt=""
+                                            width="15" height="15">
+                                        Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 myMargin-left-80px">
+                            <img src="./images/Logo/vintage_logo_2.png" alt="" width="400" height="150">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End logo and menu -->
+    </section>
+    <!--End main menu -->
+
+    <div class="container">
+        <div class="myMargin-top-60px myMargin-bottom-60px">
+            <h2 id="about" class="lineHR"><span class="menuStyle">Sign up</span></h2>
+        </div>
+    </div>
+
+    <section>
+        <!-- form -->
+        <div class="container">
+            <form class="formSignUp">
+                <div class="row no-gutters myMargin-top-60px">
+                    <div class="col-md-8">
+                        <div class="row no-gutters">
+                            <div class="col-md-3">
+                                <b>Fullname</b> <br>
+                                <input id="firstName" type="text" style="width: 95%;">
+                                <label for="firstName"><small>First</small></label>
+                            </div>
+                            <div class="col-md-3"> <br>
+                                <input id="middleName" type="text" style="width: 95%;">
+                                <label for="middleName"><small>Middle</small></label>
+                            </div>
+                            <div class="col-md-5"> <br>
+                                <input id="lastName" type="text" style="width: 95%;">
+                                <label for="lastName"><small>Last</small></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <b>Date</b> <br>
+                        <input id="birthDay" type="text" style="width: 60%;"> <br>
+                        <label for="birthDay"><small>DD-MM-YY</small></label>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-6">
+                        <div class="row no-gutters">
+                            <div class="col-md-12">
+                                <b>Address</b>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-md-12">
+                                <input id="streetAddress" type="text" style="width: 90%">
+                                <label for="streetAddress"><small>Street Address</small></label>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-md-12">
+                                <input id="streetAddressLine2" type="text" style="width: 90%">
+                                <label for="streetAddressLine2"><small>Street Address Line 2</small></label>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-md-6">
+                                <select>
+                                    <option>New york</option>
+                                    <option>Tokyo</option>
+                                </select> <br>
+                                <label><small>City</small></label>
+                            </div>
+                            <div class="col-md-6">
+                                <select>
+                                    <option>Texas</option>
+                                    <option>Florida</option>
+                                </select> <br>
+                                <label><small>State/Province</small></label>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-md-6">
+                                <input id="zip" type="text" style="width: 90%"> <br>
+                                <label for="zip"><small>Portal/Zip Code</small></label>
+                            </div>
+                            <div class="col-md-6">
+                                <select>
+                                    <option>United States</option>
+                                    <option>Odono Baletz</option>
+                                </select> <br>
+                                <label><small>Country</small></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row no-gutters">
+                            <div class="col-md-12">
+                                <b>Phone Number</b>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="input-group mb-3" style="width: 400px;">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><img src="./images/icon/phone.png" alt=""
+                                            width="25" height="25"></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="99-999-9999">
+                            </div>
+                        </div>
+                        <div class="row no-gutters mb-3 mt-2">
+                            <div class="col-md-12">
+                                <b>This is my:</b>
+                                <select>
+                                    <option>Personal number</option>
+                                    <option>Company number</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-md-12">
+                                <b>E-mail</b>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="input-group mb-3" style="width: 400px;">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><img src="./images/icon/email.png" alt=""
+                                            width="25" height="25"></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="example@gmail.com">
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-md-12">
+                                <div  class="genderBox">
+                                    <b>Gender:</b>
+                                    <div style="margin-left: 50px;">
+                                        <input class="w3-radio" type="radio" name="gender" value="male" checked>
+                                        <label>Male</label> <br>
+                                        <input class="w3-radio" type="radio" name="gender" value="female">
+                                        <label>Female</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div style="margin-left: 50px;">
+                            <b>Describe yourself</b> <br>
+                            <textarea name="" id="" rows="10" placeholder="Write somthing..."></textarea><br>
+                            <input type="checkbox"> I agree to terms of Lullaby shop
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center mb-4">
+                        <button class="btn btn-success">Sign up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <section>
+        <div class="container-fluid container-fluid-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6 borderRight-footer">
+                                <h2 class="lullabyFont">LULLABY</h2>
+                                <p><b>7637 Halz Dr. 2D-K, PA 19406</b></p>
+                                <p>Ut perspiciatis unde omnis iste natus error sit
+                                    ut perspiciatis unde omnis iste natus error sit
+                                    ut perspiciatis unde omnis iste natus error sit.
+                                </p>
+                            </div>
+                            <div class="col-md-6 pl-5">
+                                <h4>About company</h4>
+                                <hr width="50px;">
+                                <p>Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                                <a class="btn-footer" href="#">More info</a> <br>
+                                <a class="btn-footer" href="./contact.html">Contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h3>Help us</h3>
+                                        <ul class="footerList">
+                                            <hr width="40px">
+                                            <li><a href="./index.html">Home</a></li>
+                                            <li><a href="#about">About</a></li>
+                                            <li><a href="./index.html">Service</a></li>
+                                            <li><a href="./index.html">Team</a></li>
+                                            <li><a href="./index.html">Help</a></li>
+                                            <li><a href="./contact.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 footerList myPadding-top-80px">
+                                        <ul>
+                                            <li><a href="#about">Fax</a></li>
+                                            <li><a href="./index.html">Terms</a></li>
+                                            <li><a href="./index.html">Policy</a></li>
+                                            <li><a href="./index.html">Refunds</a></li>
+                                            <li><a href="./contact.html">Paypal</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Newsletter</h3>
+                                <hr width="40px">
+                                <a class="backGroundColor myMargin-right-20px" href=""><img
+                                        src="./images/icon/facebook1.png" alt="" width="50" height="50"></a>
+                                <a class="backGroundColor" href=""><img src="./images/icon/instagram1.png" alt=""
+                                        width="50" height="50"></a>
+                                <input class="footerForm myMargin-top-10px" type="text" placeholder="Search..."><br>
+                                <input class="btn-footer-2" type="button" value="Go">
+                                <p class="myMargin-top-10px">Vel illum qui dolorem eum fugiat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end footer  -->
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header w3-brown">
+                    <h4 class="modal-title">Log in</h4>
+                    <button style="color: white;" type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p>
+                        <label class="w3-text-brown"><b>User</b></label>
+                        <input class="w3-input w3-border w3-sand" name="first" type="text">
+                    </p>
+                    <p>
+                        <label class="w3-text-brown"><b>Password</b></label>
+                        <input class="w3-input w3-border w3-sand" name="first" type="password">
+                    </p>
+                    <p class="myAlign-Center myMargin-top-30px"><button class="w3-btn w3-brown">Log in</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End the Modal -->
+
+</body>
+
+</html>
